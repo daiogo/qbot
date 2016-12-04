@@ -8,7 +8,7 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #0083FF;
+  color: #333333;
 }
 .text-primary {
   color: #0083FF;
@@ -68,9 +68,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: white;
+  color: #0083FF;
   background-color: #FFFFFF;
-  border-color: #f6bf01;
+  border-color: #0083FF;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -745,17 +745,14 @@ body {
   webkit-tap-highlight-color: #0083FF;
 }
 .section-heading {
-  color: #0083FF;
+  color: #333333;
 }
 .service-heading {
-  color: #0083FF;
+  color: #333333;
 }
 
 .timeline-heading h4 {
-  color: #0083FF !important;
-}
-.timeline-heading h4 {
-  color: #0083FF;
+  color: #333333 !important;
 }
 
 .bg-light-blue h2 {
@@ -776,3 +773,90 @@ body {
 #category {
   height: 62px;
 }
+.portfolio-item h4 {
+  color: #0083FF;
+}
+.portfolio-item {
+  background: #FFFFFF;
+}
+.portfolio-link {
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+#logo {
+  height: 50px;
+}
+.modal-body {
+  background-color: white;
+  /*background-image: url('../img/map-image.png');*/
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal-body .section-heading {
+  color: white;
+}
+.modal-body .form-group {
+  margin-bottom: 25px;
+}
+.modal-body .form-group input,
+.modal-body .form-group textarea {
+  padding: 20px;
+}
+.modal-body .form-group input.form-control {
+  height: auto;
+}
+.modal-body .form-group textarea.form-control {
+  height: 236px;
+}
+.modal-body .form-control:focus {
+  border-color: #0083FF;
+  box-shadow: none;
+}
+.modal-body ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+.modal-body :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+.modal-body ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+.modal-body :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+.modal-body .text-danger {
+  color: #e74c3c;
+}
+#store {
+  color: #B14CE3;
+}
+#chat {
+  color: #00B2C2;
+}
+#schedule {
+  color: #F45C58;
+}
+#remote {
+  color: #97A9D2;
+}
+#orders {
+  color: #42A940;
+}
+#payments {
+  color: #CA262C;
+}
+
