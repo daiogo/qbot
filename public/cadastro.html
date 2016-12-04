@@ -34,6 +34,15 @@
 </head>
 
 <body id="page-top" class="index">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1800077290264183";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -74,13 +83,125 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Siga estes passos</h2>
-                    <h3 class="section-subheading text-muted">Basta seguir estes simples passos para criar seu chatbot.</h3>
+                    <h2 class="section-heading">Conecte-se</h2>
+                    <h3 class="section-subheading text-muted">Simplesmente connecte-se com o Facebook para começar a criar seu chatbot.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+
+                    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false">Conecte-se com Facebook</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Complete seu cadastro</h2>
+                    <h3 class="section-subheading text-muted">Preencha os campos abaixo para que possamos habilitar o serviço.</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="timeline">
+                    <form action="/dashboard.html" name="" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Seu nome" id="name" >
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Seu email" id="email" >
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Seu telefone" id="phone" >
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nome da empresa" id="company" >
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="CPF/CNPJ" id="ssn" >
+                                </div>
+                                <!--<div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Facebook API key" id="apikey" >
+                                </div>-->
+                                <div class="form-group">
+                                    <select id="category" class="form-control">
+                                      <option value="" disabled selected>Segmento</option>
+                                      <option class="form-control" value="roupas">Restaurante/Lanchonete</option>
+                                      <option class="form-control" value="sapatos">E-commerce</option>
+                                      <option class="form-control" value="moveis">Supermercado</option>
+                                      <option class="form-control" value="alimentos">Lojas</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <button type="submit" class="btn btn-xl">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Qbot 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
+
+<!--
+<ul class="timeline">
                         <li>
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/logos/fb.png" alt="">
@@ -91,7 +212,7 @@
                                     <h4 class="subheading">Crie uma página da sua empresa no Facebook</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Crie uma página para a sua empresa e gerencie o relacionamento com seus clientes pelo Facebook.</p>
+                                    <p class="text-muted">Se você já tem, ótimo! Caso contrário, crie uma página para a sua empresa.</p>
                                 </div>
                             </div>
                         </li>
@@ -102,10 +223,10 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Passo 2</h4>
-                                    <h4 class="subheading">Habilite o administrador da página no Facebook Developers</h4>
+                                    <h4 class="subheading">Habilite o Qbot como administrador da sua página no Facebook Developers</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Tendo uma conta no Facebook Developers, você pode transformar a página do seu negócio em um aplicativo! Depois de cadastrar-se a gente te ensina os passos necessários.</p>
+                                    <p class="text-muted">Não sabe como fazer isso? Deixe isso com a gente, habilitando a Qbot como administrador da página da sua empresa no Facebook.</p>
                                 </div>
                             </div>
                         </li>
@@ -116,7 +237,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Passo 3</h4>
-                                    <h4 class="subheading">Adicione um aplicativo que deseja usar como seu chatbot</h4>
+                                    <h4 class="subheading">No Facebook Developers, adicione um aplicativo que deseja usar como seu chatbot</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Escolha a aplicação onde nós vamos construir seu chatbot.</p>
@@ -180,117 +301,13 @@
                             </div>
                         </li>
                         
-                        <!--<li class="timeline-inverted">
+                        <li class="timeline-inverted">
                             <div class="timeline-image">
                                 <h4>Be Part
                                     <br>Of Our
                                     <br>Story!</h4>
                             </div>
-                        </li>-->
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Complete seu cadastro</h2>
-                    <h3 class="section-subheading text-muted">Preencha os campos abaixo para que possamos habilitar o serviço.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form action="/dashboard.html" name="" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Seu nome" id="name" >
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Seu email" id="email" >
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Seu telefone" id="phone" >
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nome da empresa" id="company" >
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="CPF/CNPJ" id="ssn" >
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Facebook API key" id="apikey" >
-                                </div>
-                                <!--<div class="form-group">
-                                    <select id="category" class="form-control">
-                                      <option value="" disabled selected>Segmento</option>
-                                      <option class="form-control" value="roupas">Restaurante/Lanchonete</option>
-                                      <option class="form-control" value="sapatos">E-commerce</option>
-                                      <option class="form-control" value="moveis">Supermercado</option>
-                                      <option class="form-control" value="alimentos">Lojas</option>
-                                    </select>
-                                </div>-->
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <button type="submit" class="btn btn-xl">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Qbot 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
-</body>
-
-</html>
+-->
